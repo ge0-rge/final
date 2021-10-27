@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/16842ffe17.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -14,30 +19,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
-    <title>Document</title>
+    <title>VR</title>
 </head>
-<body style="background-color: white;">
-    <header class="header">
-       <a href="#"><img class="logo" src="images/logo.png" alt="logoimage"></a>
-        <nav>
-            <ul class="headerul">
-                <li>
-                    <a class="navlinks" href="">HOME</a>
-                </li>
-                <li>
-                    <a class="navlinks" href="">GAMES</a>
-                </li>
-                <li>
-                    <a class="navlinks" href="">SHOP</a>
-                </li>
-                <li>
-                    <a class="navlinks" href="">CONTACT</a>
-                </li>
-            </ul>
-        </nav>
-        <i class="fas fa-bars"></i>
-        <a class="autorisation" href="#">sign in</a>
-
+<body>
+    <header style="position: relative;">
+        <div class="header">
+         <a href="index.html"><img class="logo" src="images/logo.png" alt="logoimage"></a>
+            <nav>
+                <ul class="headerul" id="navigation">
+                    <li>
+                        <a class="navlinks" href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a class="navlinks" href="#games">GAMES</a>
+                    </li>
+                    <li>
+                        <a class="navlinks" href="#device">SHOP</a>
+                    </li>
+                    <li>
+                        <a class="navlinks" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="autorisation" href="index2.html">sign in</a>
+            <div class="button" id="burger">
+                <i class="fas fa-bars"></i> 
+            </div>
+        </div>
+            
     </header>
     <section class="firstsection">
         <div class="h1div">
@@ -49,7 +58,7 @@
             </video>
         </div>
     </section>
-    <section class="gamesection">
+    <section id="games" class="gamesection">
         <h2 class="h2">TRY NOW</h2>
         <div class="sliderdiv">
         <ul class="slider">
@@ -99,9 +108,9 @@
         </div>
 
     </section>
-    <section class="gamingdevices">
-        <h2 class="h2">BEST CHOISE FOR GAMING</h2>
-            <ul class="slider">
+    <section id="device" class="gamingdevices">
+        <h2 class="h2">THE BEST CHOISE FOR GAMING</h2>
+            <ul class="slider slider2">
                 <li>
                     <a href="https://www.amazon.com/Oculus-Quest-Advanced-All-One-Virtual/dp/B099VMT8VZ/ref=sr_1_1_sspa?crid=2EJSZCF423BI4&dchild=1&keywords=vr+glasses&qid=1634673228&sprefix=vr+glus%2Caps%2C559&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFWNEM4RlBPR0dIWDQmZW5jcnlwdGVkSWQ9QTA5MDU4MzIzRDNESEhUOEFRS1ZTJmVuY3J5cHRlZEFkSWQ9QTA1NzE1NDkzTUxJUVdCRzRVMzZQJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==" target="blank">
                         <div class="gamediv">
@@ -147,7 +156,7 @@
             </ul>
 
     </section>
-    <footer class="footer">
+    <footer id="contact" class="footer">
         <div class="aboutusdiv">
             <h3 class="h3">ABOUT US</h3>
             <P class="about"> VR.inc is a leading online retailer and authorized distributor of tokens, content and digital wallets from the world's most famous stores. We believe that our customers deserve the highest level of products and services that we can provide. We feature instant delivery via email or direct upload of all codes for video game cards, apps, music, movies, TV, etc..
@@ -155,7 +164,7 @@
         </div>
         <div>
             <h3 class="h3">QUICK LINKS</h3>
-            <ul>
+            <ul class="quicklinksdiv">
                 <li><a class="qoucklinks"  href="#">Help</a></li>
                 <li><a class="qoucklinks" href="#">FAQ's</a></li>
                 <li><a class="qoucklinks" href="#">Contact Us</a></li>
@@ -182,11 +191,11 @@
         </div>
         <div>
             <h3 class="h3">Follow Us</h3>
-            <div>
-            <a class="fbicon" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-            <a class="insicon" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-            <a class="twicon" href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
-            <a class="youicon" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            <div class="linkdiv">
+            <a target="blank" class="fbicon" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a target="blank" class="insicon" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a target="blank" class="twicon" href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+            <a target="blank" class="youicon" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
 
